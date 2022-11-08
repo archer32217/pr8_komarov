@@ -10,6 +10,7 @@ string f(string password)
 	{
 		password += rand() % ('z' - 'a' + 1) + 'a';
 		password += rand() % ('Z' - 'A' + 1) + 'A';
+		password += rand() % ('9' - '0' + 1) + '0';
 	}
 	return password;
 }
