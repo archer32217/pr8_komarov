@@ -9,6 +9,7 @@ string f(string password)
 	for (int i = 0; i < 11; i++)
 	{
 		password += rand() % ('z' - 'a' + 1) + 'a';
+		password += rand() % ('Z' - 'A' + 1) + 'A';
 	}
 	return password;
 }
